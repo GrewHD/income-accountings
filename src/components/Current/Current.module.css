@@ -1,0 +1,14 @@
+.current {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.current span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+
+    color: #2B2B2B;
+}

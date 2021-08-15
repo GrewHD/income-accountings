@@ -1,0 +1,81 @@
+.accountingItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    min-width: 350px;
+    min-height: 61px;
+    border-bottom: 1px solid rgba(43, 43, 43, 0.05);
+}
+
+.iconItemNameDate {
+    display: flex;
+}
+
+.iconItemNameDate .itemName {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 17px;
+
+    color: #2B2B2B;
+
+    margin-bottom: 6px;
+}
+
+.valueButtons {
+    display: flex;
+    align-items: center;
+}
+
+.valueButtons p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #2B2B2B;
+}
+
+.valueButtons button {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: none;
+    /*width: 21px;*/
+    padding-left: 10px;
+    margin-left: 8px;
+    cursor: pointer
+}
+
+.valueButtons button:active {
+
+}
+
+.buttonsBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonsBlock button {
+    /*border-radius: 37px;*/
+    border: 5px;
+    /*border-color: black;*/
+}
+
+.iconImg {
+    max-height: 30px;
+    margin-right: 15px;
+}
+
+.iconItemNameDate .itemDate {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: rgba(43, 43, 43, 0.25);
+}
+

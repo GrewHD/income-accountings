@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy'), url(./fonts/Gilroy-Light.otf) format('opentype');
+}
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+button,
+button:active,
+button:focus,
+input,
+input:active,
+input:focus{
+    outline: none;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    z-index: 1001;
+}
+
+.app {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 450px;
+    border: 1px solid black;
+    font-family: Gilroy, Arial, serif;
+    position: absolute;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 42px;
+    color: #2B2B2B;
+    margin: 50px 0 25px 0;
+}
+
+.mainBlock {
+    /*max-width: 100%;*/
+}
+
+.footerBlock {
+    background: #F9F9F9;
+    min-width: 100%;
+}
+
+.footerContainer {
+    margin-left: 50px;
+}
+
+.line {
+    width: 150px;
+    border-bottom: 1px solid rgba(43, 43, 43, 0.07);
+    margin: 7px auto;
+}
+
+.addAccountingBlock {
+    /*min-width: 100%;*/
+}

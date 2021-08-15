@@ -1,0 +1,77 @@
+.modalOverlay {
+    background: rgba(43, 43, 43, 0.4);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.modalWindow p{
+    text-align: center;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.modalValueInputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalValueInputs input {
+    background: #EFEFEF;
+    border-radius: 12px;
+    border: 0;
+    width: 250px;
+    height: 45px;
+    padding: 14px 0 14px 20px;
+    margin-top: 15px;
+}
+
+.modalButtons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.modalButtons button {
+    border-radius: 37px;
+    border: 0;
+    width: 99px;
+    height: 46px;
+}
+
+.modalButtons button:after {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: white;
+}
+
+.modalButtons .submitButton {
+    background-color: #39DA51;
+}
+
+.modalButtons .submitButton:after {
+    content: "Submit";
+
+}
+
+.modalButtons .cancelButton {
+    background-color: #DA3939;
+}
+
+.modalButtons .cancelButton:after {
+    content: "Cancel";
+}
